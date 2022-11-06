@@ -20,7 +20,7 @@ mongoose.connect('mongodb+srv://angulardyma:123123123@cluster0.wq1uxma.mongodb.n
 //     res.sendFile(path.join(__dirname, '../public/index.html'));
 // });
 
-app.use(express.static("../public"));
+app.use(express.static("public"));
 
 app.get("/*", function (req, res) {
     res.sendFile("index.html", { root: "public" });
